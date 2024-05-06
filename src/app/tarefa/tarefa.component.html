@@ -1,0 +1,35 @@
+<form class="example-form" >
+	<mat-form-field class="resumo">
+    <mat-label>RESUMO:</mat-label>
+    <input matInput placeholder="EX. problema no DNS">
+  </mat-form-field>
+  	<div class="lado">
+		<mat-form-field>
+			<mat-label>Prioridade</mat-label>
+			<mat-select>
+			<mat-option value="-1">Selecione</mat-option>
+			<mat-option value="0">Crítica</mat-option>
+			<mat-option value="1">Alta</mat-option>
+			<mat-option value="2">Média</mat-option>
+			<mat-option value="3">Baixa</mat-option>
+			</mat-select>
+		</mat-form-field>
+		<mat-radio-group  name="problema" color="primary">
+			<mat-radio-button value="TAREFA" checked>Tarefa</mat-radio-button>
+			<mat-radio-button value="BUG">Bug</mat-radio-button>
+		</mat-radio-group>
+	</div>
+	<mat-form-field class="resumo">
+		<mat-label>Prazo final:</mat-label>
+		<input matInput placeholder="EX. data limite" type="date">
+	  </mat-form-field>
+	<br/>
+	<mat-form-field class="resumo">
+		<mat-label>Descrição:</mat-label>
+		<textarea matInput rows="4" cols="50" placeholder="Insira a descrição"></textarea>
+	  </mat-form-field>
+	<br />
+  <div style="text-align: center;">
+  	<button mat-flat-button color="primary">Enviar</button>
+  </div>
+</form>
